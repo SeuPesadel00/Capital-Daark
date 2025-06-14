@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capital Daark - Loja</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Loja.css">
+</head>
+<body class="min-h-screen flex flex-col">
+
+    <script src="auth_guard.js"></script>
+
+    <header class="bg-gray-900 bg-opacity-70 backdrop-blur-sm p-4 md:p-6 shadow-lg fixed w-full z-10">
+        <nav class="container mx-auto flex flex-col md:flex-row justify-between items-center relative">
+            <div class="text-2xl md:text-3xl font-bold text-white mb-4 md:mb-0 z-20">
+                <span class="neon-text">Capital</span> <span class="text-purple-500">Daark</span>
+            </div>
+            <ul class="flex flex-wrap justify-center gap-4 md:gap-8 text-lg font-medium md:absolute md:left-1/2 md:-translate-x-1/2 z-10">
+                <li><a href="user_home.html" class="nav-link text-gray-300 hover:text-cyan-400 transition duration-300 rounded-md p-2">INÍCIO</a></li>
+                <li><a href="contatos.html" class="nav-link text-gray-300 hover:text-cyan-400 transition duration-300 rounded-md p-2">CONTATOS</a></li>
+                <li><a href="sobre_nos.html" class="nav-link text-gray-300 hover:text-cyan-400 transition duration-300 rounded-md p-2">SOBRE NÓS</a></li>
+            </ul>
+            <div class="hidden md:block w-24"></div>
+        </nav>
+    </header>
+
+    <main class="flex-grow pt-24 pb-12">
+        <section id="shop" class="fade-in container mx-auto px-4 py-12 md:py-24">
+            <h2 class="text-3xl md:text-5xl font-bold text-center mb-12 neon-text">Nossa Loja</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-800 rounded-xl p-6 shadow-lg neon-border flex flex-col items-center text-center">
+                    <img src="https://placehold.co/300x200/2a2a2a/0ff?text=Produto+1" alt="Produto 1" class="rounded-lg mb-4 w-full h-48 object-cover">
+                    <h3 class="text-xl font-semibold text-white mb-2">Dispositivo Quântico X1</h3>
+                    <p class="text-gray-400 text-sm mb-4">Processamento de dados em velocidade de luz.</p>
+                    <span class="text-2xl font-bold text-cyan-400 mb-4">R$ 1.200,00</span>
+                    <button class="neon-button text-white font-bold py-2 px-6 rounded-full text-sm">
+                        Adicionar ao Carrinho
+                    </button>
+                </div>
+                <div class="bg-gray-800 rounded-xl p-6 shadow-lg neon-border flex flex-col items-center text-center">
+                    <img src="https://placehold.co/300x200/2a2a2a/f0f?text=Produto+2" alt="Produto 2" class="rounded-lg mb-4 w-full h-48 object-cover">
+                    <h3 class="text-xl font-semibold text-white mb-2">Interface Neural V2</h3>
+                    <p class="text-gray-400 text-sm mb-4">Conecte-se diretamente com a rede global.</p>
+                    <span class="text-2xl font-bold text-purple-400 mb-4">R$ 2.500,00</span>
+                    <button class="neon-button text-white font-bold py-2 px-6 rounded-full text-sm">
+                        Adicionar ao Carrinho
+                    </button>
+                </div>
+                <div class="bg-gray-800 rounded-xl p-6 shadow-lg neon-border flex flex-col items-center text-center">
+                    <img src="https://placehold.co/300x200/2a2a2a/0f0?text=Produto+3" alt="Produto 3" class="rounded-lg mb-4 w-full h-48 object-cover">
+                    <h3 class="text-xl font-semibold text-white mb-2">Drone de Vigilância AGI</h3>
+                    <p class="text-gray-400 text-sm mb-4">Autonomia e precisão para suas missões.</p>
+                    <span class="text-2xl font-bold text-green-400 mb-4">R$ 800,00</span>
+                    <button class="neon-button text-white font-bold py-2 px-6 rounded-full text-sm">
+                        Adicionar ao Carrinho
+                    </button>
+                </div>
+                <div class="bg-gray-800 rounded-xl p-6 shadow-lg neon-border flex flex-col items-center text-center">
+                    <img src="https://placehold.co/300x200/2a2a2a/ff0?text=Produto+4" alt="Produto 4" class="rounded-lg mb-4 w-full h-48 object-cover">
+                    <h3 class="text-xl font-semibold text-white mb-2">Óculos de Realidade Aumentada</h3>
+                    <p class="text-gray-400 text-sm mb-4">Mergulhe em novas realidades.</p>
+                    <span class="text-2xl font-bold text-yellow-400 mb-4">R$ 1.800,00</span>
+                    <button class="neon-button text-white font-bold py-2 px-6 rounded-full text-sm">
+                        Adicionar ao Carrinho
+                    </button>
+                </div>
+                <div class="bg-gray-800 rounded-xl p-6 shadow-lg neon-border flex flex-col items-center text-center">
+                    <img src="https://placehold.co/300x200/2a2a2a/00f?text=Produto+5" alt="Produto 5" class="rounded-lg mb-4 w-full h-48 object-cover">
+                    <h3 class="text-xl font-semibold text-white mb-2">Módulo de Energia Portátil</h3>
+                    <p class="text-gray-400 text-sm mb-4">Nunca fique sem energia.</p>
+                    <span class="text-2xl font-bold text-blue-400 mb-4">R$ 450,00</span>
+                    <button class="neon-button text-white font-bold py-2 px-6 rounded-full text-sm">
+                        Adicionar ao Carrinho
+                    </button>
+                </div>
+                <div class="bg-gray-800 rounded-xl p-6 shadow-lg neon-border flex flex-col items-center text-center">
+                    <img src="https://placehold.co/300x200/2a2a2a/f00?text=Produto+6" alt="Produto 6" class="rounded-lg mb-4 w-full h-48 object-cover">
+                    <h3 class="text-xl font-semibold text-white mb-2">Implante Cibernético</h3>
+                    <p class="text-gray-400 text-sm mb-4">Aumente suas capacidades físicas.</p>
+                    <span class="text-2xl font-bold text-red-400 mb-4">R$ 3.000,00</span>
+                    <button class="neon-button text-white font-bold py-2 px-6 rounded-full text-sm">
+                        Adicionar ao Carrinho
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="p-6 text-center">
+        <p>&copy; 2025 Capital Daark. Todos os direitos reservados.</p>
+        <p class="text-sm mt-2">Construindo o futuro, hoje.</p>
+    </footer>
+
+</body>
+</html>

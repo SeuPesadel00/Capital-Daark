@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capital Daark - Registrar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="register.css">
+</head>
+<body class="min-h-screen flex flex-col">
+
+    <header class="bg-gray-900 bg-opacity-70 backdrop-blur-sm p-4 md:p-6 shadow-lg fixed w-full z-10">
+        <nav class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+            <div class="text-2xl md:text-3xl font-bold text-white mb-4 md:mb-0">
+                <span class="neon-text">Capital</span> <span class="text-purple-500">Daark</span>
+            </div>
+        </nav>
+    </header>
+
+    <main class="flex-grow pt-24 pb-12 flex items-center justify-center">
+        <section id="register" class="fade-in container mx-auto px-4 py-12 md:py-24">
+            <h2 class="text-3xl md:text-5xl font-bold text-center mb-12 neon-text">Criar Nova Conta</h2>
+            <div class="max-w-md mx-auto bg-gray-800 rounded-xl p-8 shadow-lg neon-border">
+                <form id="registerForm" class="space-y-6">
+                    <div>
+                        <label for="name" class="block text-gray-300 text-sm font-bold mb-2">Nome de Usuário</label>
+                        <input type="text" id="name" name="name" class="form-input w-full" placeholder="Seu nome de usuário" required>
+                    </div>
+                    <div>
+                        <label for="email" class="block text-gray-300 text-sm font-bold mb-2">E-mail</label>
+                        <input type="email" id="email" name="email" class="form-input w-full" placeholder="seu.email@exemplo.com" required>
+                    </div>
+                    <div>
+                        <label for="password" class="block text-gray-300 text-sm font-bold mb-2">Senha</label>
+                        <input type="password" id="password" name="password" class="form-input w-full" placeholder="Crie uma senha" required>
+                    </div>
+                    <div>
+                        <label for="confirm-password" class="block text-gray-300 text-sm font-bold mb-2">Confirmar Senha</label>
+                        <input type="password" id="confirm-password" name="confirm-password" class="form-input w-full" placeholder="Confirme sua senha" required>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="neon-button text-white font-bold py-3 px-10 rounded-full text-lg">
+                            Registrar
+                        </button>
+                    </div>
+                    <div id="message" class="mt-4 text-center text-sm font-semibold"></div>
+                </form>
+                <div class="mt-6 text-center text-gray-400">
+                    <p>Já tem uma conta? <a href="index.html" class="text-cyan-400 hover:underline">Faça Login</a></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="p-6 text-center">
+        <p>&copy; 2025 Capital Daark. Todos os direitos reservados.</p>
+        <p class="text-sm mt-2">Construindo o futuro, hoje.</p>
+    </footer>
+
+    <script src="register_script.js"></script>
+</body>
+</html>

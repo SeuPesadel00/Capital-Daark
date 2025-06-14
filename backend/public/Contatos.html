@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capital Daark - Contatos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Contatos.css">
+</head>
+<body class="min-h-screen flex flex-col">
+
+    <script src="auth_guard.js"></script>
+
+    <header class="bg-gray-900 bg-opacity-70 backdrop-blur-sm p-4 md:p-6 shadow-lg fixed w-full z-10">
+        <nav class="container mx-auto flex flex-col md:flex-row justify-between items-center relative">
+            <div class="text-2xl md:text-3xl font-bold text-white mb-4 md:mb-0 z-20">
+                <span class="neon-text">Capital</span> <span class="text-purple-500">Daark</span>
+            </div>
+            <ul class="flex flex-wrap justify-center gap-4 md:gap-8 text-lg font-medium md:absolute md:left-1/2 md:-translate-x-1/2 z-10">
+                <li><a href="user_home.html" class="nav-link text-gray-300 hover:text-cyan-400 transition duration-300 rounded-md p-2">INÍCIO</a></li>
+                <li><a href="loja.html" class="nav-link text-gray-300 hover:text-cyan-400 transition duration-300 rounded-md p-2">LOJA</a></li>
+                <li><a href="sobre_nos.html" class="nav-link text-gray-300 hover:text-cyan-400 transition duration-300 rounded-md p-2">SOBRE NÓS</a></li>
+            </ul>
+            <div class="hidden md:block w-24"></div>
+        </nav>
+    </header>
+
+    <main class="flex-grow pt-24 pb-12">
+        <section id="contact" class="fade-in container mx-auto px-4 py-12 md:py-24">
+            <h2 class="text-3xl md:text-5xl font-bold text-center mb-12 neon-text">Fale Conosco</h2>
+            <div class="max-w-3xl mx-auto bg-gray-800 rounded-xl p-8 shadow-lg neon-border">
+                <form class="space-y-6">
+                    <div>
+                        <label for="name" class="block text-gray-300 text-sm font-bold mb-2">Nome Completo</label>
+                        <input type="text" id="name" name="name" class="form-input w-full" placeholder="Seu nome">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-gray-300 text-sm font-bold mb-2">E-mail</label>
+                        <input type="email" id="email" name="email" class="form-input w-full" placeholder="seu.email@exemplo.com">
+                    </div>
+                    <div>
+                        <label for="subject" class="block text-gray-300 text-sm font-bold mb-2">Assunto</label>
+                        <input type="text" id="subject" name="subject" class="form-input w-full" placeholder="Assunto da mensagem">
+                    </div>
+                    <div>
+                        <label for="message" class="block text-gray-300 text-sm font-bold mb-2">Sua Mensagem</label>
+                        <textarea id="message" name="message" rows="5" class="form-input w-full" placeholder="Escreva sua mensagem aqui..."></textarea>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="neon-button text-white font-bold py-3 px-10 rounded-full text-lg">
+                            Enviar Mensagem
+                        </button>
+                    </div>
+                </form>
+                <div class="mt-8 text-center text-gray-400">
+                    <p>Ou entre em contato diretamente:</p>
+                    <p class="text-cyan-400 font-semibold">contato@capitaldaark.com</p>
+                    <p class="text-purple-400 font-semibold">(XX) XXXX-XXXX</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="p-6 text-center">
+        <p>&copy; 2025 Capital Daark. Todos os direitos reservados.</p>
+        <p class="text-sm mt-2">Construindo o futuro, hoje.</p>
+    </footer>
+</body>
+</html>

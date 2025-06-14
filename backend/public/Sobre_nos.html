@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capital Daark - Sobre Nós</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Sobre_nos.css">
+</head>
+<body class="min-h-screen flex flex-col">
+
+     <script src="auth_guard.js"></script>
+
+    <header class="bg-gray-900 bg-opacity-70 backdrop-blur-sm p-4 md:p-6 shadow-lg fixed w-full z-10">
+        <nav class="container mx-auto flex flex-col md:flex-row justify-between items-center relative">
+            <div class="text-2xl md:text-3xl font-bold text-white mb-4 md:mb-0 z-20">
+                <span class="neon-text">Capital</span> <span class="text-purple-500">Daark</span>
+            </div>
+            <ul class="flex flex-wrap justify-center gap-4 md:gap-8 text-lg font-medium md:absolute md:left-1/2 md:-translate-x-1/2 z-10">
+                <li><a href="user_home.html" class="nav-link text-gray-300 hover:text-cyan-400 transition duration-300 rounded-md p-2">INÍCIO</a></li>
+                <li><a href="loja.html" class="nav-link text-gray-300 hover:text-cyan-400 transition duration-300 rounded-md p-2">LOJA</a></li>
+                <li><a href="contatos.html" class="nav-link text-gray-300 hover:text-cyan-400 transition duration-300 rounded-md p-2">CONTATOS</a></li>
+            </ul>
+            <div class="hidden md:block w-24"></div>
+        </nav>
+    </header>
+
+    <main class="flex-grow pt-24 pb-12">
+        <section id="about" class="fade-in container mx-auto px-4 py-12 md:py-24">
+            <h2 class="text-3xl md:text-5xl font-bold text-center mb-12 neon-text">Sobre Nós</h2>
+            <div class="max-w-4xl mx-auto bg-gray-800 rounded-xl p-8 shadow-lg neon-border">
+                <p class="text-lg text-gray-300 leading-relaxed mb-6">
+                    Na <span class="text-cyan-400 font-semibold">Capital Daark</span>, somos pioneiros na fronteira da inovação tecnológica. Fundada com a visão de um futuro onde a tecnologia se integra perfeitamente à vida humana, nossa missão é desenvolver soluções que transcendam as expectativas e redefinam o que é possível.
+                </p>
+                <p class="text-lg text-gray-300 leading-relaxed mb-6">
+                    Desde interfaces neurais avançadas até dispositivos quânticos de última geração, cada produto que criamos é um testemunho do nosso compromisso com a excelência, a funcionalidade e um design que inspira. Acreditamos que o futuro não é apenas algo a ser esperado, mas algo a ser construído, e estamos na vanguarda dessa construção.
+                </p>
+                <p class="text-lg text-gray-300 leading-relaxed mb-6">
+                    Nossa equipe é composta por mentes brilhantes e apaixonadas, dedicadas a empurrar os limites da ciência e da engenharia. Juntos, estamos forjando um caminho para um amanhã mais conectado, eficiente e extraordinário.
+                </p>
+                <div class="text-center mt-8">
+                    <img src="https://placehold.co/400x250/2a2a2a/0ff?text=Nossa+Visao" alt="Nossa Visão" class="rounded-lg shadow-xl inline-block neon-border max-w-full h-auto">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="p-6 text-center">
+        <p>&copy; 2025 Capital Daark. Todos os direitos reservados.</p>
+        <p class="text-sm mt-2">Construindo o futuro, hoje.</p>
+    </footer>
+</body>
+</html>

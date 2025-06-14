@@ -1,0 +1,81 @@
+/* Define a fonte Inter para todo o corpo do documento */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #0d0d0d; /* Fundo muito escuro */
+    color: #e0e0e0; /* Cor de texto padrão */
+    overflow-x: hidden; /* Evita rolagem horizontal */
+}
+
+/* Estilo para elementos de neon */
+.neon-text {
+    text-shadow: 0 0 5px #0ff, 0 0 10px #0ff, 0 0 20px #0ff, 0 0 40px #0ff;
+}
+.neon-border {
+    border: 1px solid;
+    border-image: linear-gradient(to right, #0ff, #f0f) 1;
+    box-shadow: 0 0 8px #0ff, 0 0 16px #f0f;
+}
+.neon-button {
+    background: linear-gradient(45deg, #0ff, #f0f);
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px #0ff, 0 0 20px #f0f;
+}
+.neon-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 15px #0ff, 0 0 30px #f0f;
+}
+
+/* Animação de entrada para seções */
+.fade-in {
+    animation: fadeIn 0.8s ease-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Estilo para o footer */
+footer {
+    background-color: #1a1a1a;
+    color: #a0a0a0;
+}
+
+/* Estilos para o formulário de login */
+.form-input {
+    background-color: #1a1a1a;
+    border: 1px solid #333;
+    color: #e0e0e0;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    transition: border-color 0.3s ease;
+}
+.form-input:focus {
+    outline: none;
+    border-color: #0ff;
+    box-shadow: 0 0 0 2px rgba(0, 255, 255, 0.2);
+}
+
+/* Estilo para o scrollbar (webkits) */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, #0ff, #f0f);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(to bottom, #00e6e6, #e600e6);
+}
