@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Capital Daark - Recuperar Senha</title>
+    <title>Capital Daark - Registrar</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="recover_password.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body class="min-h-screen flex flex-col">
 
@@ -19,27 +19,35 @@
     </header>
 
     <main class="flex-grow pt-24 pb-12 flex items-center justify-center">
-        <section id="recover-password" class="fade-in container mx-auto px-4 py-12 md:py-24">
-            <h2 class="text-3xl md:text-5xl font-bold text-center mb-12 neon-text">Recuperar Senha</h2>
+        <section id="register" class="fade-in container mx-auto px-4 py-12 md:py-24">
+            <h2 class="text-3xl md:text-5xl font-bold text-center mb-12 neon-text">Criar Nova Conta</h2>
             <div class="max-w-md mx-auto bg-gray-800 rounded-xl p-8 shadow-lg neon-border">
-                <form class="space-y-6">
+                <form id="registerForm" class="space-y-6">
+                    <div>
+                        <label for="name" class="block text-gray-300 text-sm font-bold mb-2">Nome de Usuário</label>
+                        <input type="text" id="name" name="name" class="form-input w-full" placeholder="Seu nome de usuário" required>
+                    </div>
                     <div>
                         <label for="email" class="block text-gray-300 text-sm font-bold mb-2">E-mail</label>
                         <input type="email" id="email" name="email" class="form-input w-full" placeholder="seu.email@exemplo.com" required>
                     </div>
+                    <div>
+                        <label for="password" class="block text-gray-300 text-sm font-bold mb-2">Senha</label>
+                        <input type="password" id="password" name="password" class="form-input w-full" placeholder="Crie uma senha" required>
+                    </div>
+                    <div>
+                        <label for="confirm-password" class="block text-gray-300 text-sm font-bold mb-2">Confirmar Senha</label>
+                        <input type="password" id="confirm-password" name="confirm-password" class="form-input w-full" placeholder="Confirme sua senha" required>
+                    </div>
                     <div class="text-center">
                         <button type="submit" class="neon-button text-white font-bold py-3 px-10 rounded-full text-lg">
-                            Enviar Código de Recuperação
+                            Registrar
                         </button>
                     </div>
+                    <div id="message" class="mt-4 text-center text-sm font-semibold"></div>
                 </form>
                 <div class="mt-6 text-center text-gray-400">
-                    <p class="text-sm">
-                        Um código de recuperação será enviado para o seu e-mail cadastrado.
-                        Para que esta funcionalidade seja completa, é necessário um sistema de backend (servidor)
-                        para gerar e enviar o código por e-mail, e para validar a recuperação da senha.
-                    </p>
-                    <p class="mt-4">Lembrou da senha? <a href="index.html" class="text-cyan-400 hover:underline">Faça Login</a></p>
+                    <p>Já tem uma conta? <a href="index.html" class="text-cyan-400 hover:underline">Faça Login</a></p>
                 </div>
             </div>
         </section>
@@ -49,5 +57,7 @@
         <p>&copy; 2025 Capital Daark. Todos os direitos reservados.</p>
         <p class="text-sm mt-2">Construindo o futuro, hoje.</p>
     </footer>
+
+    <script src="register_script.js"></script>
 </body>
 </html>

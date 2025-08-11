@@ -24,9 +24,6 @@ app.use(cors());
 // Middleware para processar JSON no corpo das requisições (req.body)
 app.use(express.json());
 
-// Servir arquivos estáticos do frontend (HTML, CSS, JS)
-app.use(express.static(path.join(__dirname, 'public')));
-
 // Conexão com o MongoDB Atlas
 mongoose.connect(process.env.MONGODB_URI)
     .then(() => console.log('Conectado ao MongoDB Atlas!'))
