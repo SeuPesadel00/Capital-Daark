@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
             try {
                 // Envia os dados para a API de registro no seu backend
-                const response = await fetch('http://localhost:3000/api/register', {
+                const response = await fetch('https://capital-daark.onrender.com', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'
