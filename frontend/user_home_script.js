@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 return;
             }
 
-            const response = await fetch('http://localhost:3000/api/protected', {
+            const response = await fetch('https://capital-daark.onrender.com/api/auth/login', {
                 method: 'GET',
                 headers: {
                     'x-auth-token': currentToken // Envia o token no cabeçalho 'x-auth-token'

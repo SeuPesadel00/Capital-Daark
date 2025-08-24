@@ -26,8 +26,9 @@ document.addEventListener('DOMContentLoaded', function() {
             }
 
             try {
-                console.log('Tentando fazer fetch para:', 'http://localhost:3000/api/auth/register');
-                const response = await fetch('http://localhost:3000/api/auth/register', {
+                // CORREÇÃO: URL do backend no Render
+                console.log('Tentando fazer fetch para:', 'https://capital-daark.onrender.com/api/auth/register');
+                const response = await fetch('https://capital-daark.onrender.com/api/auth/register', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'
@@ -39,20 +40,13 @@ document.addEventListener('DOMContentLoaded', function() {
                 console.log('Resposta do Backend:', data);
 
                 if (response.ok) {
-                    messageDiv.textContent = data.message + ' Redirecionando para login...'; // Mensagem mais clara
+                    messageDiv.textContent = data.message + ' Redirecionando para login...';
                     messageDiv.className = 'mt-4 text-center text-sm font-semibold text-green-400';
                     registerForm.reset();
 
-                    // REMOVER: As linhas que salvam o token e username no localStorage
-                    // if (data.token) {
-                    //     localStorage.setItem('token', data.token);
-                    //     localStorage.setItem('username', data.username);
-                    // }
-
                     console.log('Registro bem-sucedido. Redirecionando para login...');
                     setTimeout(() => {
-                        // ALTERAR: Para a página de login (index.html ou login.html)
-                        window.location.href = 'index.html'; // Ou 'index.html' se for sua página de login
+                        window.location.href = 'index.html';
                     }, 2000);
                 } else {
                     messageDiv.textContent = data.message || 'Erro no registro.';
